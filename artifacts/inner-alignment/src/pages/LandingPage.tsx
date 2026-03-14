@@ -239,13 +239,13 @@ export default function LandingPage() {
               <p className="text-xl text-background/80 mb-8 font-light">
                 Private 1:1 sessions available.
               </p>
-              <p className="text-lg text-background/60 mb-12">
+              <p className="text-lg text-background/60 mb-6">
                 Message to learn more or schedule an introductory conversation to see if we're a good fit for this work.
               </p>
               
               <div className="p-6 rounded-2xl bg-white/5 border border-white/10 inline-block backdrop-blur-sm">
-                <h4 className="font-serif text-xl mb-2">What to expect</h4>
-                <p className="text-background/70 text-sm max-w-sm">
+                <h4 className="font-serif text-xl mb-2 text-primary-foreground">What to expect</h4>
+                <p className="text-primary-foreground/90 text-sm max-w-sm">
                   A safe, non-judgmental space to explore your inner landscape. No pressure, no obligations.
                 </p>
               </div>
