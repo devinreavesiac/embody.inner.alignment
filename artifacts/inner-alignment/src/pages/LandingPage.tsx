@@ -233,7 +233,7 @@ export default function LandingPage() {
                 <Leaf className="w-5 h-5" />
                 <span className="uppercase tracking-widest text-sm font-medium">Take the next step</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-serif mb-2 leading-tight text-primary">
+              <h2 className="text-4xl md:text-5xl font-serif mb-6 leading-tight text-primary">
                 Begin Your Inner Alignment Journey
               </h2>
               <p className="text-xl text-background/80 mb-8 font-light">
