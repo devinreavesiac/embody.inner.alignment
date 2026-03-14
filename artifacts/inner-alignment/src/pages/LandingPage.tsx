@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { 
   Leaf, 
@@ -9,7 +9,8 @@ import {
   CheckCircle2,
   ArrowRight,
   Sparkles,
-  Heart
+  Heart,
+  Calendar
 } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 
@@ -26,6 +27,8 @@ const FadeIn = ({ children, delay = 0, className = "" }: { children: React.React
 );
 
 export default function LandingPage() {
+  const [contactTab, setContactTab] = useState<'message' | 'schedule'>('message');
+
   const scrollToContact = (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => {
     e.preventDefault();
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -251,9 +254,71 @@ export default function LandingPage() {
           
           <div>
             <FadeIn delay={0.2}>
-              <div className="bg-background text-foreground rounded-3xl p-8 md:p-10 shadow-2xl">
-                <h3 className="text-2xl font-serif mb-6">Send a Message</h3>
-                <ContactForm />
+              <div className="bg-background text-foreground rounded-3xl p-8 md:p-10 shadow-2xl overflow-hidden">
+                {/* Tabs */}
+                <div className="flex gap-2 mb-8 border-b border-border">
+                  <button
+                    onClick={() => setContactTab('message')}
+                    className={`px-6 py-3 font-medium flex items-center gap-2 border-b-2 transition-colors ${
+                      contactTab === 'message'
+                        ? 'border-primary text-primary'
+                        : 'border-transparent text-muted-foreground hover:text-foreground'
+                    }`}
+                  >
+                    <MessageCircleHeart className="w-4 h-4" />
+                    Send Message
+                  </button>
+                  <button
+                    onClick={() => setContactTab('schedule')}
+                    className={`px-6 py-3 font-medium flex items-center gap-2 border-b-2 transition-colors ${
+                      contactTab === 'schedule'
+                        ? 'border-primary text-primary'
+                        : 'border-transparent text-muted-foreground hover:text-foreground'
+                    }`}
+                  >
+                    <Calendar className="w-4 h-4" />
+                    Schedule Call
+                  </button>
+                </div>
+
+                {/* Contact Form Tab */}
+                {contactTab === 'message' && (
+                  <motion.div
+                    key="message"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                  >
+                    <ContactForm />
+                  </motion.div>
+                )}
+
+                {/* Calendly Tab */}
+                {contactTab === 'schedule' && (
+                  <motion.div
+                    key="schedule"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    className="space-y-4"
+                  >
+                    <p className="text-foreground mb-4">
+                      Schedule a free introductory call to explore whether we're a good fit for working together.
+                    </p>
+                    <a
+                      href="https://calendly.com/your-username"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:shadow-lg transition-shadow"
+                    >
+                      <Calendar className="w-4 h-4" />
+                      Schedule on Calendly
+                    </a>
+                    <p className="text-sm text-muted-foreground mt-6">
+                      You can also embed your Calendly directly here. Replace the URL above with your actual Calendly link in the code.
+                    </p>
+                  </motion.div>
+                )}
               </div>
             </FadeIn>
           </div>

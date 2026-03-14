@@ -16,12 +16,32 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+### Inner Alignment Coaching (`artifacts/inner-alignment`)
+
+A professional React + Vite website for a coaching business. Features:
+- Beautiful landing page with hero section featuring AI-generated background
+- Service benefits and testimonial sections
+- Dual contact options: contact form and Calendly scheduling
+- Tab-based contact section that switches between messaging and calendar scheduling
+- Calming, professional design with earthy color palette
+- Responsive mobile-first layout
+- Form validation using React Hook Form + Zod
+- Smooth animations with Framer Motion
+
+**Customization:**
+- Update Calendly link: In `src/pages/LandingPage.tsx` line 310, replace `https://calendly.com/your-username` with your actual Calendly URL
+- Colors: All Tailwind colors are defined in `src/index.css` with a warm, earthy palette
+
 ## Structure
 
 ```text
 artifacts-monorepo/
 ├── artifacts/              # Deployable applications
-│   └── api-server/         # Express API server
+│   ├── api-server/         # Express API server
+│   ├── mockup-sandbox/     # Component preview server
+│   └── inner-alignment/    # Coaching website (React + Vite)
 ├── lib/                    # Shared libraries
 │   ├── api-spec/           # OpenAPI spec + Orval codegen config
 │   ├── api-client-react/   # Generated React Query hooks
