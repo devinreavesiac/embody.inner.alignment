@@ -306,7 +306,7 @@ export default function LandingPage() {
                       Schedule a free introductory call to explore whether we're a good fit for working together.
                     </p>
                     <a
-                      href="https://calendly.com/your-username"
+                      href="https://calendly.com/inneralignmentembodyment/30min"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:shadow-lg transition-shadow"
@@ -314,9 +314,6 @@ export default function LandingPage() {
                       <Calendar className="w-4 h-4" />
                       Schedule on Calendly
                     </a>
-                    <p className="text-sm text-muted-foreground mt-6">
-                      You can also embed your Calendly directly here. Replace the URL above with your actual Calendly link in the code.
-                    </p>
                   </motion.div>
                 )}
               </div>
