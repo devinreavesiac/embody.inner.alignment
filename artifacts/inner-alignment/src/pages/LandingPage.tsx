@@ -127,7 +127,7 @@ export default function LandingPage() {
           </FadeIn>
 
           <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center relative z-10">
-            <FadeIn delay={0.2} className="space-y-6 text-lg text-muted-foreground">
+            <FadeIn delay={0.2} className="space-y-6 text-lg text-foreground/85">
               <p>
                 <strong className="text-foreground font-medium">Inner Alignment Coaching</strong> helps you break the patterns controlling your life so you can live what you believe.
               </p>
