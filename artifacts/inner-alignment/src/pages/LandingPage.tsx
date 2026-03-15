@@ -141,7 +141,7 @@ export default function LandingPage() {
                   <Sparkles className="w-6 h-6" />
                 </div>
                 <p className="text-xl md:text-2xl font-serif text-foreground leading-relaxed italic">
-                  "Together, we gently uncover the hidden patterns that create suffering and help you realign with your true nature — so you can live with clarity, emotional balance, and a sense of control over your life."
+                  "Together, we will uncover the hidden patterns that create suffering helping you realign with your true nature — so you can live with clarity, emotional balance, and a deeper control over your life."
                 </p>
               </div>
             </FadeIn>
