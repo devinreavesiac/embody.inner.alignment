@@ -89,7 +89,7 @@ export default function LandingPage() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed"
           >
-            Inner Alignment Coaching helps you release emotional patterns, stop taking things personally, and live with deeper integrity, clarity, and peace.
+            Inner Alignment Coaching helps you release emotional reaction patterns, practice the spiritual truths in daily life, and live with deeper authenticity, clarity, and peace.
           </motion.p>
           
           <motion.div
