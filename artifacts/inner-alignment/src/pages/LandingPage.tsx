@@ -325,6 +325,11 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="py-8 text-center text-muted-foreground text-sm bg-foreground text-background/60">
         <p>© {new Date().getFullYear()} Inner Alignment Coaching. All rights reserved.</p>
+        <p className="mt-3">
+          <a href="mailto:inneralignmentembodyment@gmail.com" className="text-primary hover:text-primary/80 transition-colors">
+            inneralignmentembodyment@gmail.com
+          </a>
+        </p>
       </footer>
     </div>
   );

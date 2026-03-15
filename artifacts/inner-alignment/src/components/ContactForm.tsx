@@ -29,17 +29,36 @@ export function ContactForm() {
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
-    // Simulate network request
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Form submitted:", data);
+    try {
+      // Send email using Web3Forms (free, no backend needed)
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "64d4df5b-4f7f-4b8c-a0e5-7c8d9e1a2b3c",
+          name: data.name,
+          email: data.email,
+          message: data.message,
+          subject: `New message from ${data.name}`,
+          from_name: "Inner Alignment Coaching Contact Form",
+        }),
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+        reset();
+        
+        // Reset success state after a few seconds
+        setTimeout(() => {
+          setIsSuccess(false);
+        }, 5000);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
     setIsSubmitting(false);
-    setIsSuccess(true);
-    reset();
-    
-    // Reset success state after a few seconds
-    setTimeout(() => {
-      setIsSuccess(false);
-    }, 5000);
   };
 
   return (
