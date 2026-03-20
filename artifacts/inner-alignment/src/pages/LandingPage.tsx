@@ -154,7 +154,7 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto">
           <FadeIn>
             <div className="text-center mb-16">
-              <span className="text-primary font-medium tracking-widest uppercase text-sm mb-4 block">The Process</span>
+              <span className="text-primary font-medium tracking-widest uppercase text-lg md:text-2xl mb-4 block">The Process</span>
               <h2 className="text-3xl md:text-5xl font-serif text-foreground">This Work Helps You</h2>
             </div>
           </FadeIn>
