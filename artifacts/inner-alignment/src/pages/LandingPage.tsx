@@ -163,7 +163,7 @@ export default function LandingPage() {
             {[
               { icon: Wind, title: "Embody Values", desc: "Embody the spiritual values you deeply believe in, bringing them into everyday reality." },
               { icon: Leaf, title: "Release the Past", desc: "Release emotional weight from the past that no longer serves your present." },
-              { icon: MessageCircleHeart, title: "Soften Judgment", desc: "Recognize and gently soften judgment patterns toward yourself and others." },
+              { icon: MessageCircleHeart, title: "Recognize Judgment", desc: "Recognize and heal judgment patterns toward yourself and others." },
               { icon: ShieldCheck, title: "Stop Reacting", desc: "Stop taking things personally and establish healthy emotional boundaries." },
               { icon: Heart, title: "Communicate clearly", desc: "Communicate with greater awareness, compassion, and integrity in all relationships." },
               { icon: SunDim, title: "Find Peace", desc: "Feel more peaceful, present, and naturally aligned in your daily life." }
