@@ -122,7 +122,7 @@ export default function LandingPage() {
         <div className="max-w-4xl mx-auto">
           <FadeIn>
             <h2 className="text-3xl md:text-5xl font-serif text-center mb-16 leading-tight text-balance">
-              This process is transformational for your relationships, improving all interactions you will have.
+              This <span className="text-4xl md:text-6xl">process</span> is transformational for your relationships, improving all interactions you will have.
             </h2>
           </FadeIn>
 
