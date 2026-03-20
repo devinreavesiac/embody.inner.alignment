@@ -245,8 +245,8 @@ export default function LandingPage() {
               
               <div className="p-6 rounded-2xl bg-white/5 border border-white/10 inline-block backdrop-blur-sm">
                 <h4 className="font-serif text-xl mb-2 text-primary-foreground">What to expect</h4>
-                <p className="text-primary-foreground/90 text-sm max-w-sm">
-                  A safe, non-judgmental space to explore your inner landscape. No pressure, no obligations.
+                <p className="text-primary-foreground/90 text-sm max-w-sm leading-relaxed">
+                  A non-judgmental space to explore your inner landscape. I will give you honest truth, direct and straightforward feedback, no comforting lies. This work is for you if you are ready to be honest with yourself and willing to put in the work to introspect and be radically honest with yourself. If you do this I promise you will have incredible success in transforming your life!
                 </p>
               </div>
             </FadeIn>
