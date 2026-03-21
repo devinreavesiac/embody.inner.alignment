@@ -323,13 +323,24 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 text-center text-muted-foreground text-sm bg-foreground text-background/60">
-        <p>© {new Date().getFullYear()} Inner Alignment Coaching. All rights reserved.</p>
-        <p className="mt-3">
-          <a href="mailto:inneralignmentembodyment@gmail.com" className="text-primary hover:text-primary/80 transition-colors">
-            inneralignmentembodyment@gmail.com
-          </a>
-        </p>
+      <footer className="py-12 text-center text-muted-foreground text-sm bg-foreground text-background/60">
+        <div className="max-w-3xl mx-auto space-y-6">
+          <div className="border-t border-background/20 pt-8">
+            <p className="text-base text-primary-foreground font-medium mb-3">Pricing & Guarantee</p>
+            <p className="leading-relaxed text-background/70">
+              Your first 30 minute session is free. $60 per hour coaching. <br />
+              <span className="font-semibold text-primary-foreground">Your life will be transformed or your money back.</span>
+            </p>
+          </div>
+          <div className="border-t border-background/20 pt-6">
+            <p>© {new Date().getFullYear()} Inner Alignment Coaching. All rights reserved.</p>
+            <p className="mt-3">
+              <a href="mailto:inneralignmentembodyment@gmail.com" className="text-primary hover:text-primary/80 transition-colors">
+                inneralignmentembodyment@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
   );
