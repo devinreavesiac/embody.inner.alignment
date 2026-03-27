@@ -57,9 +57,9 @@ export default function LandingPage() {
           <img 
             src={`${import.meta.env.BASE_URL}images/hero-bg.png`} 
             alt="Serene landscape background" 
-            className="w-full h-full object-cover object-center opacity-40 mix-blend-multiply"
+            className="w-full h-full object-cover object-center opacity-75"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/80 to-background pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/50 to-background pointer-events-none" />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto text-center mt-12 md:mt-24">
@@ -177,7 +177,7 @@ export default function LandingPage() {
 
       {/* About / Intro Section */}
       <section className="pt-8 pb-8 px-6 md:px-12 bg-background relative overflow-hidden">
-        <div className="absolute right-0 top-0 opacity-10 pointer-events-none transform translate-x-1/2 -translate-y-1/4">
+        <div className="absolute right-0 top-0 opacity-25 pointer-events-none transform translate-x-1/2 -translate-y-1/4">
           <img 
             src={`${import.meta.env.BASE_URL}images/abstract-nature.png`} 
             alt="Decorative organic shape" 
