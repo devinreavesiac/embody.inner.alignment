@@ -113,8 +113,8 @@ export default function LandingPage() {
       <section className="pt-24 pb-8 px-6 md:px-12 relative overflow-hidden">
         {/* Nature background */}
         <div className="absolute inset-0 z-0">
-          <img src={`${import.meta.env.BASE_URL}images/forest-light.png`} alt="" className="w-full h-full object-cover opacity-20"/>
-          <div className="absolute inset-0 bg-gradient-to-br from-amber-50/80 via-white/70 to-green-50/60"/>
+          <img src={`${import.meta.env.BASE_URL}images/forest-light.png`} alt="" className="w-full h-full object-cover opacity-50"/>
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-50/50 via-white/30 to-green-50/30"/>
         </div>
         {/* Decorative - Metatron's Cube top right */}
         <div className="absolute -top-10 -right-10 w-72 h-72 opacity-[0.07] pointer-events-none text-red-500">
@@ -246,8 +246,8 @@ export default function LandingPage() {
       <section className="pt-8 pb-8 px-6 md:px-12 relative overflow-hidden">
         {/* Nature background */}
         <div className="absolute inset-0 z-0">
-          <img src={`${import.meta.env.BASE_URL}images/botanical.png`} alt="" className="w-full h-full object-cover opacity-10"/>
-          <div className="absolute inset-0 bg-gradient-to-bl from-white/90 via-green-50/80 to-amber-50/70"/>
+          <img src={`${import.meta.env.BASE_URL}images/botanical.png`} alt="" className="w-full h-full object-cover opacity-40"/>
+          <div className="absolute inset-0 bg-gradient-to-bl from-white/50 via-green-50/30 to-amber-50/30"/>
         </div>
         {/* Decorative Sacred Geometry - Top Left */}
         <div className="absolute -top-20 -left-20 w-80 h-80 opacity-5 pointer-events-none">
@@ -334,8 +334,8 @@ export default function LandingPage() {
       <section className="pt-8 pb-8 px-6 md:px-12 relative overflow-hidden">
         {/* Nature background */}
         <div className="absolute inset-0 z-0">
-          <img src={`${import.meta.env.BASE_URL}images/mountain-lake.png`} alt="" className="w-full h-full object-cover opacity-15"/>
-          <div className="absolute inset-0 bg-gradient-to-tr from-purple-50/80 via-sky-50/70 to-amber-50/60"/>
+          <img src={`${import.meta.env.BASE_URL}images/mountain-lake.png`} alt="" className="w-full h-full object-cover opacity-45"/>
+          <div className="absolute inset-0 bg-gradient-to-tr from-purple-50/40 via-sky-50/30 to-amber-50/30"/>
         </div>
         {/* Decorative - Flower of Life top right */}
         <div className="absolute -top-16 -right-16 w-80 h-80 opacity-[0.08] pointer-events-none text-red-500">
