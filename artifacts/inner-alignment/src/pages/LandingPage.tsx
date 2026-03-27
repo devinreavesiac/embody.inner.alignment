@@ -356,7 +356,7 @@ export default function LandingPage() {
             </h2>
           </FadeIn>
 
-          <div className="space-y-6">
+          <div className="grid sm:grid-cols-2 gap-2">
             {[
               "You value spiritual growth but want something grounded and practical",
               "You're emotionally aware but feel stuck in repeating patterns of reaction",
@@ -365,13 +365,11 @@ export default function LandingPage() {
               "You want guidance without judgment or dogma"
             ].map((text, i) => (
               <FadeIn key={i} delay={i * 0.1}>
-                <div className="flex items-start gap-4 p-6 rounded-2xl bg-white shadow-sm border border-border/50 hover:shadow-md transition-shadow">
-                  <div className="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 text-accent flex items-center justify-center">
+                <div className="h-full p-4 rounded-xl bg-background border border-border hover:shadow-lg hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300 group flex gap-3 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                     <CheckCircle2 className="w-5 h-5" />
                   </div>
-                  <p className="text-lg md:text-xl text-foreground font-medium pt-1">
-                    {text}
-                  </p>
+                  <p className="text-base text-foreground font-medium pt-2">{text}</p>
                 </div>
               </FadeIn>
             ))}
