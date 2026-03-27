@@ -109,6 +109,47 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* The Gap Section - Direct Messaging */}
+      <section className="py-24 px-6 md:px-12 bg-white relative">
+        <div className="max-w-3xl mx-auto">
+          <FadeIn>
+            <div className="space-y-8 text-lg leading-relaxed text-foreground">
+              <p className="text-xl font-serif italic">You already know better.</p>
+              
+              <p>But in real life?<br />
+              You still get triggered.<br />
+              You still react.<br />
+              You still take things personally.</p>
+              
+              <p className="font-semibold text-primary text-2xl">That's the gap.</p>
+              
+              <p className="text-xl font-serif italic text-primary">This work closes it.</p>
+
+              <div className="bg-secondary/20 border border-secondary/30 p-8 rounded-2xl space-y-6">
+                <p>In life, the same shit happens again and again.<br />
+                Different people. Same patterns.</p>
+
+                <div className="space-y-4 text-foreground/85">
+                  <p><strong>Someone disrespects you</strong> → you react, you take it personally, you make assumptions, you suffer.</p>
+                  
+                  <p><strong>Someone doesn't meet your expectations</strong> → you get hurt, you suffer disappointment.</p>
+                  
+                  <p><strong>Someone cuts you off in traffic</strong> → you get angry, you react, your inner space is disturbed by an external event you had no control over—but you have all the control over your internal space.</p>
+                </div>
+
+                <p className="pt-4">It's automatic. You're not choosing how you respond. You're being run by patterns.</p>
+                
+                <p className="text-lg font-semibold text-foreground">That's why you feel stuck—even if you're "spiritual."</p>
+
+                <p>You know the truth… but you're not living it when it matters.</p>
+              </div>
+
+              <p className="text-2xl font-serif text-primary pt-4">This work changes that.</p>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* About / Intro Section */}
       <section className="py-24 px-6 md:px-12 bg-background relative">
         <div className="absolute right-0 top-0 opacity-10 pointer-events-none transform translate-x-1/2 -translate-y-1/4">
