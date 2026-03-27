@@ -351,7 +351,7 @@ export default function LandingPage() {
         </div>
         <div className="max-w-4xl mx-auto relative z-10">
           <FadeIn>
-            <h2 className="text-3xl md:text-5xl font-serif text-center mb-16 text-foreground">
+            <h2 className="text-3xl md:text-5xl font-serif text-center mb-6 text-foreground">
               This Is For You If
             </h2>
           </FadeIn>
