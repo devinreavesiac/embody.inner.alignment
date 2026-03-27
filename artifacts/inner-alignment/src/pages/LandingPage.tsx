@@ -329,7 +329,7 @@ export default function LandingPage() {
             <p className="text-base text-primary-foreground font-medium mb-3">Pricing & Guarantee</p>
             <p className="leading-relaxed text-background/70">
               Your first 30 minute session is free. $60 per hour coaching. <br />
-              <span className="font-semibold text-primary-foreground">Your life will be transformed or your money back.</span>
+              <span className="font-semibold text-primary-foreground">If you don't experience real, noticeable shifts in how you respond to situations, your triggers, and your relationships within the first 3 sessions, I'll give you your money back.</span>
             </p>
           </div>
           <div className="border-t border-background/20 pt-6">
