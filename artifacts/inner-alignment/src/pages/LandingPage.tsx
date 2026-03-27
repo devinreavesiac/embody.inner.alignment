@@ -238,7 +238,7 @@ export default function LandingPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 px-6 md:px-12 bg-white relative overflow-hidden">
+      <section className="py-16 px-6 md:px-12 bg-white relative overflow-hidden">
         {/* Decorative Sacred Geometry - Top Left */}
         <div className="absolute -top-20 -left-20 w-80 h-80 opacity-5 pointer-events-none">
           <svg viewBox="0 0 200 200" className="w-full h-full">
@@ -274,13 +274,13 @@ export default function LandingPage() {
 
         <div className="max-w-6xl mx-auto relative z-10">
           <FadeIn>
-            <div className="text-center mb-16">
-              <span className="text-primary font-medium tracking-widest uppercase text-lg md:text-2xl mb-4 block">The Process</span>
+            <div className="text-center mb-10">
+              <span className="text-primary font-medium tracking-widest uppercase text-lg md:text-2xl mb-3 block">The Process</span>
               <h2 className="text-3xl md:text-5xl font-serif text-foreground">This Work Helps You</h2>
             </div>
           </FadeIn>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { icon: Wind, title: "Embody Values", desc: "Embody the spiritual values you deeply believe in, bringing them into everyday reality." },
               { icon: Leaf, title: "Release the Past", desc: "Release emotional weight from the past that no longer serves your present." },
@@ -290,12 +290,14 @@ export default function LandingPage() {
               { icon: SunDim, title: "Find Peace", desc: "Feel more peaceful, present, and naturally aligned in your daily life." }
             ].map((benefit, i) => (
               <FadeIn key={i} delay={i * 0.1}>
-                <div className="h-full p-8 rounded-2xl bg-background border border-border hover:shadow-xl hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300 group">
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                    <benefit.icon className="w-6 h-6" />
+                <div className="h-full p-5 rounded-2xl bg-background border border-border hover:shadow-xl hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300 group flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                    <benefit.icon className="w-5 h-5" />
                   </div>
-                  <h3 className="text-xl font-serif font-medium mb-3 text-foreground">{benefit.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{benefit.desc}</p>
+                  <div>
+                    <h3 className="text-base font-serif font-semibold mb-1 text-foreground">{benefit.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{benefit.desc}</p>
+                  </div>
                 </div>
               </FadeIn>
             ))}
