@@ -110,7 +110,12 @@ export default function LandingPage() {
       </section>
 
       {/* The Gap Section - Direct Messaging */}
-      <section className="pt-24 pb-8 px-6 md:px-12 bg-white relative overflow-hidden">
+      <section className="pt-24 pb-8 px-6 md:px-12 relative overflow-hidden">
+        {/* Nature background */}
+        <div className="absolute inset-0 z-0">
+          <img src={`${import.meta.env.BASE_URL}images/forest-light.png`} alt="" className="w-full h-full object-cover opacity-20"/>
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-50/80 via-white/70 to-green-50/60"/>
+        </div>
         {/* Decorative - Metatron's Cube top right */}
         <div className="absolute -top-10 -right-10 w-72 h-72 opacity-[0.07] pointer-events-none text-red-500">
           <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="0.8">
@@ -136,7 +141,7 @@ export default function LandingPage() {
             )}
           </svg>
         </div>
-        <div className="max-w-3xl mx-auto relative z-10">
+        <div className="max-w-3xl mx-auto relative z-10 relative">
           <FadeIn>
             <div className="space-y-8 text-lg leading-relaxed text-foreground">
               <p className="text-xl font-serif italic">You already know better.</p>
@@ -176,7 +181,7 @@ export default function LandingPage() {
       </section>
 
       {/* About / Intro Section */}
-      <section className="pt-8 pb-8 px-6 md:px-12 bg-background relative overflow-hidden">
+      <section className="pt-8 pb-8 px-6 md:px-12 relative overflow-hidden" style={{background: "linear-gradient(135deg, hsl(40,33%,97%) 0%, hsl(35,40%,94%) 40%, hsl(140,20%,94%) 100%)"}}>
         <div className="absolute right-0 top-0 opacity-25 pointer-events-none transform translate-x-1/2 -translate-y-1/4">
           <img 
             src={`${import.meta.env.BASE_URL}images/abstract-nature.png`} 
@@ -238,7 +243,12 @@ export default function LandingPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="pt-8 pb-8 px-6 md:px-12 bg-white relative overflow-hidden">
+      <section className="pt-8 pb-8 px-6 md:px-12 relative overflow-hidden">
+        {/* Nature background */}
+        <div className="absolute inset-0 z-0">
+          <img src={`${import.meta.env.BASE_URL}images/botanical.png`} alt="" className="w-full h-full object-cover opacity-10"/>
+          <div className="absolute inset-0 bg-gradient-to-bl from-white/90 via-green-50/80 to-amber-50/70"/>
+        </div>
         {/* Decorative Sacred Geometry - Top Left */}
         <div className="absolute -top-20 -left-20 w-80 h-80 opacity-5 pointer-events-none">
           <svg viewBox="0 0 200 200" className="w-full h-full">
@@ -321,7 +331,12 @@ export default function LandingPage() {
       </section>
 
       {/* "This Is For You If" Section */}
-      <section className="pt-8 pb-8 px-6 md:px-12 bg-secondary/30 relative overflow-hidden">
+      <section className="pt-8 pb-8 px-6 md:px-12 relative overflow-hidden">
+        {/* Nature background */}
+        <div className="absolute inset-0 z-0">
+          <img src={`${import.meta.env.BASE_URL}images/mountain-lake.png`} alt="" className="w-full h-full object-cover opacity-15"/>
+          <div className="absolute inset-0 bg-gradient-to-tr from-purple-50/80 via-sky-50/70 to-amber-50/60"/>
+        </div>
         {/* Decorative - Flower of Life top right */}
         <div className="absolute -top-16 -right-16 w-80 h-80 opacity-[0.08] pointer-events-none text-red-500">
           <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="0.7">
