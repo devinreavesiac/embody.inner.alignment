@@ -123,7 +123,7 @@ export default function LandingPage() {
               
               <p className="font-semibold text-primary text-2xl">That's the gap.</p>
               
-              <p className="text-xl font-serif italic text-primary">This work closes it.</p>
+              <p className="font-semibold text-primary text-2xl">This work closes it.</p>
 
               <div className="bg-secondary/20 border border-secondary/30 p-8 rounded-2xl space-y-6">
                 <p>In life, the same shit happens again and again.<br />
