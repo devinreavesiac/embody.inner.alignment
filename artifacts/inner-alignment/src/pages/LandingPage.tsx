@@ -378,7 +378,7 @@ export default function LandingPage() {
       </section>
 
       {/* CTA & Contact Section */}
-      <section id="contact" className="pt-8 pb-24 px-6 md:px-12 bg-foreground text-background relative overflow-hidden">
+      <section id="contact" className="pt-8 pb-8 px-6 md:px-12 bg-foreground text-background relative overflow-hidden">
         <div className="absolute bottom-0 left-0 w-full h-full opacity-5 pointer-events-none">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,var(--color-primary),transparent_50%)]" />
         </div>
@@ -498,7 +498,7 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 text-center text-sm bg-foreground relative overflow-hidden">
+      <footer className="pt-4 pb-12 text-center text-sm bg-foreground relative overflow-hidden">
         {/* Decorative - mandala center background */}
         <div className="absolute inset-0 flex items-center justify-center opacity-[0.04] pointer-events-none text-red-500">
           <svg viewBox="0 0 200 200" className="w-96 h-96" fill="none" stroke="currentColor" strokeWidth="0.6">
