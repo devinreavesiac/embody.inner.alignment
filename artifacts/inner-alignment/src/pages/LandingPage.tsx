@@ -280,7 +280,7 @@ export default function LandingPage() {
             </div>
           </FadeIn>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2">
             {[
               { icon: Wind, title: "Embody Values", desc: "Embody the spiritual values you deeply believe in, bringing them into everyday reality." },
               { icon: Leaf, title: "Release the Past", desc: "Release emotional weight from the past that no longer serves your present." },
@@ -290,7 +290,7 @@ export default function LandingPage() {
               { icon: SunDim, title: "Find Peace", desc: "Feel more peaceful, present, and naturally aligned in your daily life." }
             ].map((benefit, i) => (
               <FadeIn key={i} delay={i * 0.1}>
-                <div className="h-full p-5 rounded-2xl bg-background border border-border hover:shadow-xl hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300 group flex gap-4 items-start">
+                <div className="h-full p-4 rounded-xl bg-background border border-border hover:shadow-lg hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300 group flex gap-3 items-start">
                   <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                     <benefit.icon className="w-5 h-5" />
                   </div>
