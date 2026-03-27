@@ -129,7 +129,7 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center relative z-10">
             <FadeIn delay={0.2} className="space-y-6 text-lg text-foreground/85">
               <p>
-                <strong className="text-foreground font-medium">Inner Alignment Coaching</strong> helps you break the patterns controlling your life so you can live what you believe.
+                <strong className="text-foreground font-medium">Inner Alignment Coaching</strong> helps you break the reactionary patterns and self limiting beliefs running your life so you can finally live what you believe.
               </p>
               <p>
                 My goal is to help you live the best version of yourself. I support people on their journey of inner growth and self-discovery through grounded spiritual guidance, deep inner completion work, and mind–body awareness practices.
