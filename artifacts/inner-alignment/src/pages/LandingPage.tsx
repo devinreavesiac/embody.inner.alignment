@@ -295,8 +295,8 @@ export default function LandingPage() {
                     <benefit.icon className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-base font-serif font-semibold mb-1 text-foreground">{benefit.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{benefit.desc}</p>
+                    <h3 className="text-lg font-serif font-semibold mb-1 text-foreground">{benefit.title}</h3>
+                    <p className="text-muted-foreground text-base leading-relaxed">{benefit.desc}</p>
                   </div>
                 </div>
               </FadeIn>
