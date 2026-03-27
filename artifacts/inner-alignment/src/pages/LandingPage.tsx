@@ -110,8 +110,33 @@ export default function LandingPage() {
       </section>
 
       {/* The Gap Section - Direct Messaging */}
-      <section className="py-24 px-6 md:px-12 bg-white relative">
-        <div className="max-w-3xl mx-auto">
+      <section className="py-24 px-6 md:px-12 bg-white relative overflow-hidden">
+        {/* Decorative - Metatron's Cube top right */}
+        <div className="absolute -top-10 -right-10 w-72 h-72 opacity-[0.07] pointer-events-none text-red-500">
+          <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="0.8">
+            <circle cx="100" cy="100" r="90"/>
+            <circle cx="100" cy="55" r="45"/>
+            <circle cx="100" cy="145" r="45"/>
+            <circle cx="61" cy="77" r="45"/>
+            <circle cx="61" cy="122" r="45"/>
+            <circle cx="139" cy="77" r="45"/>
+            <circle cx="139" cy="122" r="45"/>
+            <polygon points="100,20 168,60 168,140 100,180 32,140 32,60"/>
+            <polygon points="100,180 168,60 32,60"/>
+            <polygon points="100,20 168,140 32,140"/>
+          </svg>
+        </div>
+        {/* Decorative - dots grid bottom left */}
+        <div className="absolute bottom-0 left-0 w-64 h-64 opacity-[0.06] pointer-events-none">
+          <svg viewBox="0 0 200 200" className="w-full h-full">
+            {Array.from({ length: 8 }).map((_, row) =>
+              Array.from({ length: 8 }).map((_, col) => (
+                <circle key={`${row}-${col}`} cx={10 + col * 26} cy={10 + row * 26} r="3" fill="#ef4444"/>
+              ))
+            )}
+          </svg>
+        </div>
+        <div className="max-w-3xl mx-auto relative z-10">
           <FadeIn>
             <div className="space-y-8 text-lg leading-relaxed text-foreground">
               <p className="text-xl font-serif italic">You already know better.</p>
@@ -151,13 +176,34 @@ export default function LandingPage() {
       </section>
 
       {/* About / Intro Section */}
-      <section className="py-24 px-6 md:px-12 bg-background relative">
+      <section className="py-24 px-6 md:px-12 bg-background relative overflow-hidden">
         <div className="absolute right-0 top-0 opacity-10 pointer-events-none transform translate-x-1/2 -translate-y-1/4">
           <img 
             src={`${import.meta.env.BASE_URL}images/abstract-nature.png`} 
             alt="Decorative organic shape" 
             className="w-96 h-96 object-contain"
           />
+        </div>
+        {/* Decorative - Sri Yantra-inspired triangles bottom left */}
+        <div className="absolute -bottom-10 -left-10 w-72 h-72 opacity-[0.07] pointer-events-none text-red-500">
+          <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="0.8">
+            <circle cx="100" cy="100" r="90"/>
+            <polygon points="100,20 175,148 25,148"/>
+            <polygon points="100,180 25,52 175,52"/>
+            <polygon points="100,35 163,135 37,135"/>
+            <polygon points="100,165 37,65 163,65"/>
+            <polygon points="100,50 150,122 50,122"/>
+            <polygon points="100,150 50,78 150,78"/>
+            <circle cx="100" cy="100" r="15"/>
+          </svg>
+        </div>
+        {/* Decorative - Star of David geometry top left */}
+        <div className="absolute top-10 left-10 w-40 h-40 opacity-[0.06] pointer-events-none text-red-500">
+          <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="1.2">
+            <polygon points="100,10 190,160 10,160"/>
+            <polygon points="100,190 10,40 190,40"/>
+            <circle cx="100" cy="100" r="95"/>
+          </svg>
         </div>
 
         <div className="max-w-4xl mx-auto">
@@ -273,8 +319,35 @@ export default function LandingPage() {
       </section>
 
       {/* "This Is For You If" Section */}
-      <section className="py-24 px-6 md:px-12 bg-secondary/30">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-24 px-6 md:px-12 bg-secondary/30 relative overflow-hidden">
+        {/* Decorative - Flower of Life top right */}
+        <div className="absolute -top-16 -right-16 w-80 h-80 opacity-[0.08] pointer-events-none text-red-500">
+          <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="0.7">
+            <circle cx="100" cy="100" r="30"/>
+            <circle cx="100" cy="70" r="30"/>
+            <circle cx="100" cy="130" r="30"/>
+            <circle cx="126" cy="85" r="30"/>
+            <circle cx="126" cy="115" r="30"/>
+            <circle cx="74" cy="85" r="30"/>
+            <circle cx="74" cy="115" r="30"/>
+            <circle cx="100" cy="100" r="60"/>
+            <circle cx="100" cy="100" r="90"/>
+          </svg>
+        </div>
+        {/* Decorative - Diamond grid bottom left */}
+        <div className="absolute -bottom-10 -left-10 w-72 h-72 opacity-[0.07] pointer-events-none text-red-500">
+          <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="0.8">
+            <polygon points="100,10 190,100 100,190 10,100"/>
+            <polygon points="100,30 170,100 100,170 30,100"/>
+            <polygon points="100,50 150,100 100,150 50,100"/>
+            <polygon points="100,70 130,100 100,130 70,100"/>
+            <line x1="10" y1="100" x2="190" y2="100"/>
+            <line x1="100" y1="10" x2="100" y2="190"/>
+            <line x1="30" y1="30" x2="170" y2="170"/>
+            <line x1="170" y1="30" x2="30" y2="170"/>
+          </svg>
+        </div>
+        <div className="max-w-4xl mx-auto relative z-10">
           <FadeIn>
             <h2 className="text-3xl md:text-5xl font-serif text-center mb-16 text-foreground">
               This Is For You If
@@ -309,6 +382,24 @@ export default function LandingPage() {
         <div className="absolute bottom-0 left-0 w-full h-full opacity-5 pointer-events-none">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,var(--color-primary),transparent_50%)]" />
         </div>
+        {/* Decorative - Vesica Piscis top right */}
+        <div className="absolute -top-20 -right-20 w-80 h-80 opacity-[0.08] pointer-events-none text-red-500">
+          <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="0.8">
+            <circle cx="80" cy="100" r="60"/>
+            <circle cx="120" cy="100" r="60"/>
+            <circle cx="100" cy="100" r="90"/>
+            <ellipse cx="100" cy="100" rx="30" ry="52"/>
+          </svg>
+        </div>
+        {/* Decorative - geometric star bottom left */}
+        <div className="absolute -bottom-10 -left-10 w-64 h-64 opacity-[0.07] pointer-events-none text-red-500">
+          <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="0.8">
+            <polygon points="100,10 116,65 173,65 128,100 144,155 100,120 56,155 72,100 27,65 84,65"/>
+            <polygon points="100,30 112,70 155,70 120,95 132,135 100,110 68,135 80,95 45,70 88,70"/>
+            <circle cx="100" cy="100" r="85"/>
+            <circle cx="100" cy="100" r="45"/>
+          </svg>
+        </div>
         
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 relative z-10">
           <div>
@@ -320,10 +411,10 @@ export default function LandingPage() {
               <h2 className="text-4xl md:text-5xl font-serif mb-6 leading-tight text-primary">
                 Begin Your Inner Alignment Journey
               </h2>
-              <p className="text-xl text-background/80 mb-8 font-light">
+              <p className="text-xl text-background/95 mb-8 font-light">
                 Private 1:1 sessions available.
               </p>
-              <p className="text-lg text-background/60 mb-6">
+              <p className="text-lg text-background/85 mb-6">
                 Message to learn more or schedule an introductory conversation to see if we're a good fit for this work.
               </p>
               
@@ -407,17 +498,31 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 text-center text-muted-foreground text-sm bg-foreground text-background/60">
-        <div className="max-w-3xl mx-auto space-y-6">
+      <footer className="py-12 text-center text-sm bg-foreground relative overflow-hidden">
+        {/* Decorative - mandala center background */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-[0.04] pointer-events-none text-red-500">
+          <svg viewBox="0 0 200 200" className="w-96 h-96" fill="none" stroke="currentColor" strokeWidth="0.6">
+            <circle cx="100" cy="100" r="90"/>
+            <circle cx="100" cy="100" r="70"/>
+            <circle cx="100" cy="100" r="50"/>
+            <circle cx="100" cy="100" r="30"/>
+            <circle cx="100" cy="100" r="10"/>
+            {[0,30,60,90,120,150,180,210,240,270,300,330].map(deg => {
+              const r = deg * Math.PI / 180;
+              return <line key={deg} x1={100 + 10*Math.cos(r)} y1={100 + 10*Math.sin(r)} x2={100 + 90*Math.cos(r)} y2={100 + 90*Math.sin(r)}/>;
+            })}
+          </svg>
+        </div>
+        <div className="max-w-3xl mx-auto space-y-6 relative z-10">
           <div className="border-t border-background/20 pt-8">
-            <p className="text-base text-primary-foreground font-medium mb-3">Pricing & Guarantee</p>
-            <p className="leading-relaxed text-background/70">
+            <p className="text-base text-background font-semibold mb-3">Pricing & Guarantee</p>
+            <p className="leading-relaxed text-background/90">
               Your first 30 minute session is free. $60 per hour coaching. <br />
-              <span className="font-semibold text-primary-foreground">If you don't experience real, noticeable shifts in how you respond to situations, your triggers, and your relationships within the first 3 sessions, I'll give you your money back.</span>
+              <span className="font-semibold text-background">If you don't experience real, noticeable shifts in how you respond to situations, your triggers, and your relationships within the first 3 sessions, I'll give you your money back.</span>
             </p>
           </div>
           <div className="border-t border-background/20 pt-6">
-            <p>© {new Date().getFullYear()} Inner Alignment Coaching. All rights reserved.</p>
+            <p className="text-background/80">© {new Date().getFullYear()} Inner Alignment Coaching. All rights reserved.</p>
             <p className="mt-3">
               <a href="mailto:inneralignmentembodyment@gmail.com" className="text-primary hover:text-primary/80 transition-colors">
                 inneralignmentembodyment@gmail.com
