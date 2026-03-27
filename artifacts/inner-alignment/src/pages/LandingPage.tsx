@@ -167,9 +167,9 @@ export default function LandingPage() {
                 <p className="text-lg font-semibold text-foreground">That's why you feel stuck—even if you're "spiritual."</p>
 
                 <p>You know the truth… but you're not living it when it matters.</p>
-              </div>
 
-              <p className="text-2xl font-serif text-primary pt-4">This work changes that.</p>
+                <p className="text-2xl font-serif text-primary">This work changes that.</p>
+              </div>
             </div>
           </FadeIn>
         </div>
