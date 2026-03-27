@@ -163,7 +163,8 @@ export default function LandingPage() {
         <div className="max-w-4xl mx-auto">
           <FadeIn>
             <h2 className="text-3xl md:text-5xl font-serif text-center mb-16 leading-tight text-balance">
-              This process is transformational for your relationships, improving all interactions you will have.
+              This work will change your relationships. <br className="hidden md:block"/>
+              Not just with other people—but with yourself… improving all your interactions.
             </h2>
           </FadeIn>
 
