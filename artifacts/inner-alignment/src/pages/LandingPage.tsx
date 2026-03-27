@@ -204,27 +204,14 @@ export default function LandingPage() {
           </svg>
         </div>
         
-        {/* Decorative Spiral - Bottom Right */}
+        {/* Decorative Spiral - Bottom Right - Fibonacci */}
         <div className="absolute -bottom-20 -right-20 w-96 h-96 opacity-5 pointer-events-none">
           <svg viewBox="0 0 200 200" className="w-full h-full">
-            <path d="M 100 100 
-                     Q 120 80 140 100 
-                     Q 160 120 140 140 
-                     Q 120 160 100 140 
-                     Q 80 120 80 100 
-                     Q 80 70 110 60 
-                     Q 140 50 160 80 
-                     Q 180 110 160 140 
-                     Q 140 170 100 170 
-                     Q 60 170 40 140 
-                     Q 20 110 40 80 
-                     Q 60 50 100 45 
-                     Q 140 40 170 70 
-                     Q 200 100 170 140" 
+            <path d="M 100 100 Q 100 90 110 90 Q 120 90 120 100 Q 120 110 110 110 Q 100 110 100 100 Q 100 95 105 95 Q 110 95 110 100 Q 110 105 105 105 Q 100 105 100 100 L 100 50 Q 100 20 130 20 Q 160 20 160 50 Q 160 80 130 80 Q 110 80 105 70 L 95 80 Q 115 95 145 95 Q 180 95 180 60 Q 180 25 145 25 Q 100 25 100 70 L 100 100 L 50 100 Q 20 100 20 130 Q 20 160 50 160 Q 80 160 85 145 L 75 140 Q 70 155 50 155 Q 30 155 30 135 Q 30 115 50 115 Q 95 115 100 140 L 100 100" 
                   fill="none" 
                   stroke="currentColor" 
                   className="text-red-500" 
-                  strokeWidth="2"/>
+                  strokeWidth="1.5"/>
           </svg>
         </div>
 
