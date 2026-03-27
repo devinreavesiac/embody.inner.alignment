@@ -110,7 +110,7 @@ export default function LandingPage() {
       </section>
 
       {/* The Gap Section - Direct Messaging */}
-      <section className="py-24 px-6 md:px-12 bg-white relative overflow-hidden">
+      <section className="pt-24 pb-8 px-6 md:px-12 bg-white relative overflow-hidden">
         {/* Decorative - Metatron's Cube top right */}
         <div className="absolute -top-10 -right-10 w-72 h-72 opacity-[0.07] pointer-events-none text-red-500">
           <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="0.8">
@@ -176,7 +176,7 @@ export default function LandingPage() {
       </section>
 
       {/* About / Intro Section */}
-      <section className="pt-24 pb-8 px-6 md:px-12 bg-background relative overflow-hidden">
+      <section className="pt-8 pb-8 px-6 md:px-12 bg-background relative overflow-hidden">
         <div className="absolute right-0 top-0 opacity-10 pointer-events-none transform translate-x-1/2 -translate-y-1/4">
           <img 
             src={`${import.meta.env.BASE_URL}images/abstract-nature.png`} 
