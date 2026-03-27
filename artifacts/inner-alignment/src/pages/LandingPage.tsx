@@ -113,8 +113,8 @@ export default function LandingPage() {
       <section className="pt-24 pb-8 px-6 md:px-12 relative overflow-hidden">
         {/* Nature background */}
         <div className="absolute inset-0 z-0">
-          <img src={`${import.meta.env.BASE_URL}images/forest-light.png`} alt="" className="w-full h-full object-cover opacity-50"/>
-          <div className="absolute inset-0 bg-gradient-to-br from-amber-50/50 via-white/30 to-green-50/30"/>
+          <img src={`${import.meta.env.BASE_URL}images/forest-light.png`} alt="" className="w-full h-full object-cover opacity-[0.38]"/>
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-50/60 via-white/40 to-green-50/40"/>
         </div>
         {/* Decorative - Metatron's Cube top right */}
         <div className="absolute -top-10 -right-10 w-72 h-72 opacity-[0.07] pointer-events-none text-red-500">
