@@ -79,8 +79,8 @@ export default function LandingPage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-serif text-balance text-foreground mb-6 leading-tight"
           >
-            You don't need more spiritual information. <br className="hidden md:block"/>
-            <span className="italic text-primary">You need help living it.</span>
+            You don't need more spiritual knowledge. <br className="hidden md:block"/>
+            <span className="italic text-primary">You need to actually live it.</span>
           </motion.h1>
           
           <motion.p 
