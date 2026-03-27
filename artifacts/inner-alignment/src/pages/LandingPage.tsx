@@ -238,7 +238,7 @@ export default function LandingPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="pt-8 pb-16 px-6 md:px-12 bg-white relative overflow-hidden">
+      <section className="pt-8 pb-8 px-6 md:px-12 bg-white relative overflow-hidden">
         {/* Decorative Sacred Geometry - Top Left */}
         <div className="absolute -top-20 -left-20 w-80 h-80 opacity-5 pointer-events-none">
           <svg viewBox="0 0 200 200" className="w-full h-full">
@@ -321,7 +321,7 @@ export default function LandingPage() {
       </section>
 
       {/* "This Is For You If" Section */}
-      <section className="py-24 px-6 md:px-12 bg-secondary/30 relative overflow-hidden">
+      <section className="pt-8 pb-24 px-6 md:px-12 bg-secondary/30 relative overflow-hidden">
         {/* Decorative - Flower of Life top right */}
         <div className="absolute -top-16 -right-16 w-80 h-80 opacity-[0.08] pointer-events-none text-red-500">
           <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="0.7">
