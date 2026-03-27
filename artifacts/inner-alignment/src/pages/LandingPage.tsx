@@ -176,7 +176,7 @@ export default function LandingPage() {
       </section>
 
       {/* About / Intro Section */}
-      <section className="py-24 px-6 md:px-12 bg-background relative overflow-hidden">
+      <section className="pt-24 pb-8 px-6 md:px-12 bg-background relative overflow-hidden">
         <div className="absolute right-0 top-0 opacity-10 pointer-events-none transform translate-x-1/2 -translate-y-1/4">
           <img 
             src={`${import.meta.env.BASE_URL}images/abstract-nature.png`} 
@@ -238,7 +238,7 @@ export default function LandingPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 px-6 md:px-12 bg-white relative overflow-hidden">
+      <section className="pt-8 pb-16 px-6 md:px-12 bg-white relative overflow-hidden">
         {/* Decorative Sacred Geometry - Top Left */}
         <div className="absolute -top-20 -left-20 w-80 h-80 opacity-5 pointer-events-none">
           <svg viewBox="0 0 200 200" className="w-full h-full">
