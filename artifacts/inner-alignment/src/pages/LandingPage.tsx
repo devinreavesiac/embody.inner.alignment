@@ -222,9 +222,15 @@ export default function LandingPage() {
             ))}
           </div>
 
-          <FadeIn delay={0.4} className="mt-16 text-center max-w-3xl mx-auto">
+          <FadeIn delay={0.4} className="mt-16 text-center max-w-3xl mx-auto space-y-6">
+            <p className="text-lg md:text-xl text-foreground">
+              <strong>You'll be supported—but you'll also be challenged.</strong>
+            </p>
+            <p className="text-lg md:text-xl text-muted-foreground">
+              Because that's what creates real change.
+            </p>
             <p className="text-lg md:text-xl text-muted-foreground italic">
-              You'll gain insight into emotional and behavioral patterns, clarify what truly matters to you, and practice mind–body awareness tools that help you respond to life with greater presence.
+              You'll gain insight into emotional and behavioral patterns, clarify what truly matters to you, and practice mind–body-emotion awareness tools that help you respond to life with greater authenticity.
             </p>
           </FadeIn>
         </div>
