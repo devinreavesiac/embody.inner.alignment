@@ -132,7 +132,7 @@ export default function LandingPage() {
                 <strong className="text-foreground font-medium">Inner Alignment Coaching</strong> helps you break the reactionary patterns and self limiting beliefs running your life so you can finally live what you believe.
               </p>
               <p>
-                My goal is to help you live the best version of yourself. I support people on their journey of inner growth and self-discovery through grounded spiritual guidance, deep inner completion work, and mind–body awareness practices.
+                My goal is to help you live the best version of yourself. I guide you through the process of inner growth. Using grounded spiritual and psychological practices, deep inner completion work, with mind–body emotional awareness.
               </p>
             </FadeIn>
             <FadeIn delay={0.4}>
