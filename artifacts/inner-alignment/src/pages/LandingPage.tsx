@@ -192,8 +192,45 @@ export default function LandingPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 px-6 md:px-12 bg-white relative">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-24 px-6 md:px-12 bg-white relative overflow-hidden">
+        {/* Decorative Sacred Geometry - Top Left */}
+        <div className="absolute -top-20 -left-20 w-80 h-80 opacity-5 pointer-events-none">
+          <svg viewBox="0 0 200 200" className="w-full h-full">
+            <circle cx="100" cy="100" r="100" fill="none" stroke="currentColor" className="text-primary"/>
+            <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" className="text-primary"/>
+            <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" className="text-primary"/>
+            <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" className="text-primary"/>
+            <path d="M100,20 L170,170 L30,170 Z" fill="none" stroke="currentColor" className="text-primary"/>
+          </svg>
+        </div>
+        
+        {/* Decorative Sacred Geometry - Bottom Right */}
+        <div className="absolute -bottom-20 -right-20 w-96 h-96 opacity-5 pointer-events-none">
+          <svg viewBox="0 0 200 200" className="w-full h-full">
+            <defs>
+              <pattern id="fractal" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+                <circle cx="25" cy="25" r="15" fill="none" stroke="currentColor" className="text-primary" strokeWidth="1"/>
+                <circle cx="25" cy="25" r="10" fill="none" stroke="currentColor" className="text-primary" strokeWidth="0.5"/>
+                <circle cx="25" cy="25" r="5" fill="none" stroke="currentColor" className="text-primary" strokeWidth="0.3"/>
+              </pattern>
+            </defs>
+            <rect width="200" height="200" fill="url(#fractal)"/>
+            <circle cx="100" cy="100" r="100" fill="none" stroke="currentColor" className="text-primary" strokeWidth="2"/>
+          </svg>
+        </div>
+
+        {/* Decorative Element - Top Right */}
+        <div className="absolute top-10 right-10 w-60 h-60 opacity-5 pointer-events-none">
+          <svg viewBox="0 0 200 200" className="w-full h-full">
+            <circle cx="100" cy="100" r="100" fill="none" stroke="currentColor" className="text-primary" strokeWidth="1"/>
+            <line x1="100" y1="20" x2="100" y2="180" stroke="currentColor" className="text-primary" strokeWidth="0.5"/>
+            <line x1="20" y1="100" x2="180" y2="100" stroke="currentColor" className="text-primary" strokeWidth="0.5"/>
+            <line x1="35" y1="35" x2="165" y2="165" stroke="currentColor" className="text-primary" strokeWidth="0.5"/>
+            <line x1="165" y1="35" x2="35" y2="165" stroke="currentColor" className="text-primary" strokeWidth="0.5"/>
+          </svg>
+        </div>
+
+        <div className="max-w-6xl mx-auto relative z-10">
           <FadeIn>
             <div className="text-center mb-16">
               <span className="text-primary font-medium tracking-widest uppercase text-lg md:text-2xl mb-4 block">The Process</span>
