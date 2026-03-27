@@ -229,6 +229,9 @@ export default function LandingPage() {
             <p className="text-lg md:text-xl text-muted-foreground">
               Because that's what creates real change.
             </p>
+            <p className="text-lg md:text-xl text-foreground font-semibold">
+              You will learn where you're out of alignment with your own values.
+            </p>
             <p className="text-lg md:text-xl text-muted-foreground italic">
               You'll gain insight into emotional and behavioral patterns, clarify what truly matters to you, and practice mind–body-emotion awareness tools that help you respond to life with greater authenticity.
             </p>
