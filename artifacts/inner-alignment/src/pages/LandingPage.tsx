@@ -37,6 +37,12 @@ export default function LandingPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      {/* Devin Reaves photo — fixed top-right, above everything */}
+      <div className="fixed top-3 right-4 z-[100] text-right max-w-[130px] md:max-w-[160px]">
+        <img src={devinPhoto} alt="Devin Reaves" className="w-full aspect-[3/4] object-cover rounded-2xl shadow-2xl border border-white/30" />
+        <p className="mt-2 text-xs md:text-sm font-medium text-foreground/90 drop-shadow-sm">Devin Reaves</p>
+      </div>
+
       {/* Navigation */}
       <nav className="absolute top-0 left-0 right-0 z-50 py-6 px-6 md:px-12 flex justify-between items-center">
         <div className="font-serif text-xl md:text-2xl font-medium tracking-wide text-foreground/90 flex items-center gap-2">
@@ -116,10 +122,6 @@ export default function LandingPage() {
         <div className="absolute inset-0 z-0">
           <img src={`${import.meta.env.BASE_URL}images/forest-light.png`} alt="" className="w-full h-full object-cover opacity-[0.38]"/>
           <div className="absolute inset-0 bg-gradient-to-br from-amber-50/60 via-white/40 to-green-50/40"/>
-        </div>
-        <div className="absolute top-2 right-6 z-20 text-right max-w-[180px]">
-          <img src={devinPhoto} alt="Devin Reaves" className="w-full aspect-[3/4] object-cover rounded-2xl shadow-2xl border border-white/30" />
-          <p className="mt-3 text-sm md:text-base font-medium text-foreground/90">Devin Reaves</p>
         </div>
         {/* Decorative - Metatron's Cube top right */}
         <div className="absolute top-44 right-2 w-64 h-64 opacity-[0.07] pointer-events-none text-red-500">
