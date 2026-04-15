@@ -13,6 +13,7 @@ import {
   Calendar
 } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
+import devinPhoto from "@assets/IMG_3274_1776267666530.jpeg";
 
 const FadeIn = ({ children, delay = 0, className = "" }: { children: React.ReactNode, delay?: number, className?: string }) => (
   <motion.div
@@ -116,8 +117,12 @@ export default function LandingPage() {
           <img src={`${import.meta.env.BASE_URL}images/forest-light.png`} alt="" className="w-full h-full object-cover opacity-[0.38]"/>
           <div className="absolute inset-0 bg-gradient-to-br from-amber-50/60 via-white/40 to-green-50/40"/>
         </div>
+        <div className="absolute top-8 right-8 z-10 text-right max-w-[180px]">
+          <img src={devinPhoto} alt="Devin Reaves" className="w-full aspect-[3/4] object-cover rounded-2xl shadow-2xl border border-white/30" />
+          <p className="mt-3 text-sm md:text-base font-medium text-foreground/90">Devin Reaves</p>
+        </div>
         {/* Decorative - Metatron's Cube top right */}
-        <div className="absolute -top-10 -right-10 w-72 h-72 opacity-[0.07] pointer-events-none text-red-500">
+        <div className="absolute top-52 right-2 w-64 h-64 opacity-[0.07] pointer-events-none text-red-500">
           <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="0.8">
             <circle cx="100" cy="100" r="90"/>
             <circle cx="100" cy="55" r="45"/>
