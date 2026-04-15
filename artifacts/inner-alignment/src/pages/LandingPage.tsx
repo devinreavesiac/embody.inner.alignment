@@ -36,9 +36,9 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Devin Reaves photo — fixed top-right, above everything */}
-      <div className="fixed top-3 right-4 z-[100] text-right max-w-[130px] md:max-w-[160px]">
+    <div className="relative flex flex-col min-h-screen">
+      {/* Devin Reaves photo — absolute top-right, scrolls with page */}
+      <div className="absolute top-3 right-4 z-[100] text-right max-w-[80px] md:max-w-[100px]">
         <img src={devinPhoto} alt="Devin Reaves" className="w-full aspect-[3/4] object-cover rounded-2xl shadow-2xl border border-white/30" />
         <p className="mt-2 text-xs md:text-sm font-medium text-foreground/90 drop-shadow-sm">Devin Reaves</p>
       </div>
